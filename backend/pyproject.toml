@@ -1,0 +1,38 @@
+[project]
+name = "nuvision-arraylab-backend"
+version = "0.5.2"
+description = "NuVision ArrayLab backend spine"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.8",
+    "pydantic-settings>=2.4",
+    "sqlalchemy>=2.0",
+    "psycopg[binary]>=3.2",
+    "alembic>=1.13",
+    "python-multipart>=0.0.9",
+    "pandas>=2.2",
+    "openpyxl>=3.1",
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "pymupdf>=1.24",
+    "pdfplumber>=0.11",
+    "python-slugify>=8.0",
+    "orjson>=3.10",
+    "shapely>=2.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2", "ruff>=0.6", "black>=24.8"]
+solar = ["pvlib>=0.11", "pandas>=2.2"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.black]
+line-length = 100
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
