@@ -1,0 +1,21 @@
+{
+  "project_id": "bench_edge_missing_height_001",
+  "site": {
+    "postcode": "EX14 4PB"
+  },
+  "roof_planes": [
+    {
+      "roof_plane_id": "roof_unknown_height",
+      "pitch_deg": 35,
+      "azimuth_deg": 180,
+      "height_m": null,
+      "roof_type": "tiled_pitched"
+    }
+  ],
+  "expected": {
+    "warnings": [
+      "roof height missing"
+    ],
+    "structural_status": "S0_unknown"
+  }
+}

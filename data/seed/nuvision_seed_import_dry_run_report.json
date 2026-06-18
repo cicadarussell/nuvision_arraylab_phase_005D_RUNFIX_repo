@@ -1,0 +1,17 @@
+{
+  "import_status": "staged",
+  "total_staged_rows": 56,
+  "rows_by_sheet": {
+    "Datasheet_Review": 18,
+    "Prices_Stock": 19,
+    "Products": 19
+  },
+  "issues": [],
+  "snapshot_id": "pds_04f454e95821571d",
+  "preview_status": "previewed",
+  "preview_actions": {
+    "create": 19
+  },
+  "preview_warning_count": 19,
+  "truth_boundary": "seed products stay Q0 until manufacturer datasheet review; dry-run does not apply to live product table"
+}

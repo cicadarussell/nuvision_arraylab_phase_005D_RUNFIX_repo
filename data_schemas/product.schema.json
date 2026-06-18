@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArrayLab Product",
+  "type": "object",
+  "required": [
+    "product_id",
+    "manufacturer",
+    "category",
+    "title",
+    "quality_level"
+  ],
+  "properties": {
+    "product_id": {
+      "type": "string"
+    },
+    "nuvision_sku": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "manufacturer_model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "category": {
+      "enum": [
+        "panel",
+        "inverter",
+        "battery",
+        "mounting",
+        "protection",
+        "cable",
+        "monitoring",
+        "other"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "inactive",
+        "discontinued",
+        "replacement_pending"
+      ]
+    },
+    "quality_level": {
+      "enum": [
+        "Q0_scraped",
+        "Q1_datasheet_linked",
+        "Q2_parsed",
+        "Q3_reviewed",
+        "Q4_manufacturer_confirmed",
+        "QX_deprecated"
+      ]
+    },
+    "nuvision_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

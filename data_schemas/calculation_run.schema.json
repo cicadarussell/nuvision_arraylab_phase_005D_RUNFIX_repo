@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArrayLab Calculation Run",
+  "type": "object",
+  "required": [
+    "run_id",
+    "run_type",
+    "software_version",
+    "engine_version",
+    "input_snapshot_hash_sha256",
+    "status"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_type": {
+      "enum": [
+        "catalogue_import",
+        "datasheet_parse",
+        "roof_geometry",
+        "panel_packing",
+        "shade",
+        "yield",
+        "stringing",
+        "mounting_precheck",
+        "bom",
+        "quote"
+      ]
+    },
+    "software_version": {
+      "type": "string"
+    },
+    "engine_version": {
+      "type": "string"
+    },
+    "input_snapshot_hash_sha256": {
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64
+    },
+    "product_data_snapshot_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "assumption_set_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

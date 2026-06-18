@@ -1,0 +1,602 @@
+{
+  "metadata": {
+    "name": "nuvision_product_catalog_seed_v0",
+    "created_utc": "2026-06-18T13:36:35Z",
+    "created_for": "NuVision ArrayLab / CICADA Solar Field Planner evolution",
+    "truth_status": "seed, not complete production catalogue",
+    "important_limitations": [
+      "This is a first-pass public-catalogue seed created from publicly visible Nuvision collection/product pages via web search, not a complete authenticated trade export.",
+      "The environment could not directly run a live crawler against the website from Python, so full pagination/datasheet capture is a technical phase task, not completed inside this response.",
+      "Trade prices are hidden behind login on the site; public snippets may expose some default variant prices but these must not be treated as trade pricing.",
+      "Datasheet URLs/specs must be verified against original manufacturer PDFs before the calculator uses them for engineering decisions. Boring, but lawsuits are more boring."
+    ]
+  },
+  "company": {
+    "name": "Nuvision Energy Ltd",
+    "website": "https://shop.nuvisionenergy.co.uk/",
+    "shop_platform": "Shopify",
+    "public_phone": "01404 891693",
+    "public_hours": "Mon-Fri 08:30-17:30",
+    "public_collection_address": "Unit 19P Flightway, Dunkeswell, Honiton EX14 4PB",
+    "known_positioning": [
+      "renewable energy trade supplier",
+      "solar design/advice support",
+      "installer/trade account model",
+      "stocked hardware with datasheets and guides"
+    ]
+  },
+  "catalogue_categories": [
+    {
+      "name": "Solar PV Panels",
+      "url": "https://shop.nuvisionenergy.co.uk/collections/solar-pv-panels",
+      "public_count": 19,
+      "status": "first_pass_complete_for_public_listing",
+      "notes": "All 19 public collection listing titles entered. Dimensions/specs partly populated where product page/search snippets exposed them; remaining need manufacturer datasheet parse."
+    },
+    {
+      "name": "Inverters",
+      "url": "https://shop.nuvisionenergy.co.uk/collections/inverters",
+      "public_count": 86,
+      "status": "collection_discovered_first_page_examples_only",
+      "notable_brands": [
+        "SolarEdge",
+        "Sunsynk",
+        "Growatt",
+        "SolaX",
+        "Solis",
+        "Victron",
+        "Enphase",
+        "Fox ESS",
+        "Livoltek"
+      ],
+      "notes": "Full 86-product pagination crawl still required."
+    },
+    {
+      "name": "Battery Storage",
+      "url": "https://shop.nuvisionenergy.co.uk/collections/battery-storage",
+      "public_count": 188,
+      "status": "collection_discovered_first_page_examples_only",
+      "notable_brands": [
+        "Pylontech",
+        "Fox ESS",
+        "SolarEdge",
+        "SolaX",
+        "Sunsynk",
+        "Dyness",
+        "Livoltek",
+        "Jean Muller",
+        "Eland",
+        "Customark"
+      ],
+      "notes": "Full 188-product pagination crawl still required."
+    },
+    {
+      "name": "Solar Panel Mounting - All Parts",
+      "url": "https://shop.nuvisionenergy.co.uk/collections/solar-panel-mounting-systems",
+      "public_count": 363,
+      "status": "collection_discovered_first_page_examples_only",
+      "notable_brands": [
+        "Van der Valk Solar Systems",
+        "Fastensol",
+        "Renusol",
+        "SolaSkirt"
+      ],
+      "notes": "Full 363-product pagination crawl still required; product grouping into rails, clamps, roof hooks, ballast, trays and cable management needed for BOM engine."
+    }
+  ],
+  "products": {
+    "solar_pv_panels_public_collection": [
+      {
+        "title": "Aiko 2.3m Extension Cable with Aiko 01C Connectors",
+        "brand": "Aiko",
+        "category": "solar_accessory",
+        "availability_text": "In stock",
+        "power_w": null,
+        "url": null,
+        "spec_status": "pending_product_page"
+      },
+      {
+        "title": "Longi Solar MONO All Black PERC Half Cell 405W",
+        "brand": "Longi",
+        "category": "solar_panel",
+        "availability_text": "Only 27 left",
+        "power_w": 405,
+        "url": "https://shop.nuvisionenergy.co.uk/products/longi-solar-mono-all-black-perc-half-cell-405w",
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "Longi Solar MONO HPBC Half Cell 440W HTH Black Frame",
+        "brand": "Longi",
+        "category": "solar_panel",
+        "availability_text": "Only 2 left",
+        "power_w": 440,
+        "url": "https://shop.nuvisionenergy.co.uk/products/longi-solar-mono-hpbc-half-cell-440w-hth-black-frame",
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "JA Solar 450W N-type Bifacial Panel Traceable LB All Black",
+        "brand": "JA Solar",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 450,
+        "url": "https://shop.nuvisionenergy.co.uk/products/ja-solar-450w-n-type-bifacial-traceable-lb-all-black-hail-resistance-class-4-with-mc4",
+        "spec_status": "partial_from_product_page",
+        "sku": "JAM54D-41-450-LB-TS-AB-MC4",
+        "stock_availability": 1610,
+        "price_public_gbp": 57.22,
+        "specs": {
+          "rating_w": 450,
+          "efficiency_percent": 22.5,
+          "width_mm": 1134,
+          "height_mm": 1762,
+          "landscape_cable_mm": 1200,
+          "warranty_product_years": 25,
+          "warranty_power_years": 30
+        },
+        "datasheets": [
+          {
+            "title": "JA 450W Double Glass MC4-EV02 Data Sheet",
+            "url": "https://samonolithportalprodcdn.blob.core.windows.net/.../pending_exact_url_from_page_link"
+          }
+        ]
+      },
+      {
+        "title": "UK Sol 440W All Black - Ethically Sourced Panel",
+        "brand": "UKSOL",
+        "category": "solar_panel",
+        "availability_text": "Only 144 left",
+        "power_w": 440,
+        "url": "https://shop.nuvisionenergy.co.uk/products/uk-sol-440w-all-black-ethically-sourced-panel",
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "JA Solar 465W N-type Double Glass Monofacial LR Traceable with MC4 connectors (Black Frame)",
+        "brand": "JA Solar",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 465,
+        "url": "https://shop.nuvisionenergy.co.uk/products/ja-solar-460w-n-type-double-glass-bifacial-lb-traceable-with-mc4-evo2-connectors-black-frame-copy",
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "DMEGC Solar 470W Infinity RT Dual Glass N-type Mono - Full Black",
+        "brand": "DMEGC",
+        "category": "solar_panel",
+        "availability_text": "Out of stock",
+        "power_w": 470,
+        "url": "https://shop.nuvisionenergy.co.uk/products/dmegc-solar-465w-infinity-rt-96-cut-dual-glass-n-type-mono-solar-module-full-black",
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "JA Solar 600W n-type Bifacial Double Glass Half-Cell MBB Traceable LB MC4",
+        "brand": "JA Solar",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 600,
+        "url": "https://shop.nuvisionenergy.co.uk/products/ja-solar-600w-n-type-bifacial-double-glass-half-cell-mbb-traceable-lb-mc4",
+        "spec_status": "partial_from_product_page",
+        "specs": {
+          "rating_w": 600,
+          "efficiency_percent": 22.7,
+          "width_mm": 1134,
+          "height_mm": 2333
+        },
+        "datasheets": [
+          {
+            "title": "JA 600 Data Sheet",
+            "url": null
+          }
+        ]
+      },
+      {
+        "title": "Longi Solar MONO PERC Half Cell 530W HIH BF",
+        "brand": "Longi",
+        "category": "solar_panel",
+        "availability_text": "Only 11 left",
+        "power_w": 530,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "JA Solar 605W n-type Bifacial Double Glass Half-Cell MBB Traceable LB MC4",
+        "brand": "JA Solar",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 605,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "Aiko 465W Neostar 2S, N-Type, Mono-Glass ABC, 54 Cell, All Black, MC4, Gen 2",
+        "brand": "Aiko",
+        "category": "solar_panel",
+        "availability_text": "Only 49 left",
+        "power_w": 465,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "Aiko 645W N-Type ABC, 72 Cell, Silver Frame Gen 2",
+        "brand": "Aiko",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 645,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "Eurener 500W All Black",
+        "brand": "Eurener",
+        "category": "solar_panel",
+        "availability_text": "Only 15 left",
+        "power_w": 500,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "DMEGC Solar 705W Infinity 132 Cut Bi-Facial Dual Glass N-type Mono Solar Module - Silver Frame/White Backsheet",
+        "brand": "DMEGC",
+        "category": "solar_panel",
+        "availability_text": "Only 12 left",
+        "power_w": 705,
+        "url": "https://shop.nuvisionenergy.co.uk/products/dmegc-solar-465w-infinity-rt-96-cut-dual-glass-n-type-mono-solar-module-full-black-copy",
+        "spec_status": "partial_from_product_page",
+        "specs": {
+          "rating_w": 705,
+          "front_efficiency_percent": 22.9,
+          "width_mm": 1303,
+          "height_mm": 2384,
+          "thickness_mm": 33,
+          "front_load_pa": 5400,
+          "rear_load_pa": 2400,
+          "pmax_temp_coeff_percent_per_c": -0.29,
+          "warranty_power_years": 30
+        }
+      },
+      {
+        "title": "Aiko Neostar 2S 510W N-Type ABC, 6- Cell, All Black Dual Glass Gen 2",
+        "brand": "Aiko",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 510,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "Aiko Neostar 3S 475W N-Type, 54 Cell, Mono Glass All Black, Gen 3",
+        "brand": "Aiko",
+        "category": "solar_panel",
+        "availability_text": "Only 12 left",
+        "power_w": 475,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "Aiko 445W Nebular 2P, N-Type, Mono-Glass ABC, 54 Cell, Black Frame, MC4-EVO2",
+        "brand": "Aiko",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 445,
+        "url": "https://shop.nuvisionenergy.co.uk/products/aiko-445w-nebular-2p-n-type-mono-glass-abc-54-cell-black-frame-mc4-evo2-copy",
+        "spec_status": "pending_datasheet"
+      },
+      {
+        "title": "UK Sol 435W All Black With Tigo Optimiser - ECO4",
+        "brand": "UKSOL",
+        "category": "solar_panel_with_optimizer",
+        "availability_text": "Out of stock",
+        "power_w": 435,
+        "url": "https://shop.nuvisionenergy.co.uk/products/uk-sol-435w-all-black-with-tigo-optimiser-eco4",
+        "spec_status": "partial_from_product_page",
+        "specs": {
+          "rating_w": 435,
+          "efficiency_percent": 22.3,
+          "width_mm": 1134,
+          "height_mm": 1724,
+          "thickness_mm": 30,
+          "warranty_materials_years": 12,
+          "warranty_power_years": 30
+        },
+        "datasheets": [
+          {
+            "title": "UKSOL 435 Tigo ECO4 Panel Datasheet",
+            "url": null
+          },
+          {
+            "title": "UKSOL Ethical Standards",
+            "url": null
+          },
+          {
+            "title": "UKSOL Product Catalogue",
+            "url": null
+          },
+          {
+            "title": "UKSOL MCS Certificate",
+            "url": null
+          }
+        ]
+      },
+      {
+        "title": "Viridian Clearline High Performance Monocrystalline All Black 405W",
+        "brand": "Viridian",
+        "category": "solar_panel",
+        "availability_text": "In stock",
+        "power_w": 405,
+        "url": null,
+        "spec_status": "pending_datasheet"
+      }
+    ],
+    "first_pass_examples_other_categories": [
+      {
+        "title": "Anker Solix X1 5.0KW Power Module",
+        "brand": "Anker Solix",
+        "category": "battery_storage_power_module",
+        "url": "https://shop.nuvisionenergy.co.uk/products/anker-solix-x1-5-0kw-power-module",
+        "sku": "ANK-X1-H5K-S",
+        "stock_availability": 4,
+        "price_public_gbp": 852.73,
+        "datasheets": [
+          "Anker Solix Datasheet Single Phase Inverter",
+          "Anker Solix Quick Start Guide",
+          "Anker Solix User Guide"
+        ],
+        "spec_status": "datasheet_link_detected_specs_pending"
+      },
+      {
+        "title": "Fox ESS 3.0kW S Series 1PH Single Tracker PV Inverter",
+        "brand": "Fox ESS",
+        "category": "inverter",
+        "url": "https://shop.nuvisionenergy.co.uk/products/fox-ess-3-0kw-s-series-1ph-single-tracker-pv-inverter",
+        "sku": "FE-S3000",
+        "price_public_gbp": 246.14,
+        "datasheets": [
+          "Fox Single String Inverter Datasheet"
+        ],
+        "spec_status": "datasheet_link_detected_specs_pending"
+      },
+      {
+        "title": "Solis S6 4kW Dual MPPT - Single Phase with DC",
+        "brand": "Solis",
+        "category": "inverter",
+        "url": "https://shop.nuvisionenergy.co.uk/products/solis-s6-4kw-dual-mppt-single-phase-with-dc",
+        "specs": {
+          "rated_power_kw": 4,
+          "mppt_count": 2,
+          "max_string_input_current_a": 14,
+          "max_efficiency_percent": 97.7,
+          "european_efficiency_percent": 97.1,
+          "ip_rating": "IP66",
+          "features": [
+            "export limitation built in; CT clamp required",
+            "AFCI",
+            "dual MPPT"
+          ]
+        },
+        "spec_status": "partial_from_product_page"
+      },
+      {
+        "title": "SolaX 5.0kW G4-V2 Hybrid inverter with Wi-Fi",
+        "brand": "SolaX",
+        "category": "hybrid_inverter",
+        "url": "https://shop.nuvisionenergy.co.uk/products/solax-5-0kw-g4-v2-hybrid-inverter-with-wi-fi",
+        "specs": {
+          "rated_power_kw": 5,
+          "pv_oversizing_percent": 200,
+          "ip_rating": "IP65",
+          "features": [
+            "built-in shadow tracking",
+            "support for high-power solar panels"
+          ]
+        },
+        "spec_status": "partial_from_product_page"
+      }
+    ]
+  },
+  "target_database_schema": {
+    "product_core_fields": [
+      "id",
+      "title",
+      "brand",
+      "category",
+      "url",
+      "sku",
+      "availability_text",
+      "stock_availability",
+      "price_public_gbp",
+      "trade_price_gbp",
+      "image_urls",
+      "datasheets",
+      "manuals",
+      "source_pages",
+      "last_seen_utc"
+    ],
+    "panel_specs": [
+      "rating_w",
+      "stc_power_w",
+      "bifacial",
+      "efficiency_percent",
+      "width_mm",
+      "height_mm",
+      "thickness_mm",
+      "weight_kg",
+      "cell_type",
+      "module_type",
+      "voc_v",
+      "vmp_v",
+      "isc_a",
+      "imp_a",
+      "max_system_voltage_v",
+      "fuse_rating_a",
+      "pmax_temp_coeff_percent_per_c",
+      "voc_temp_coeff_percent_per_c",
+      "isc_temp_coeff_percent_per_c",
+      "connector",
+      "cable_length_mm",
+      "fire_rating",
+      "snow_load_pa",
+      "wind_load_pa",
+      "warranty_product_years",
+      "warranty_power_years"
+    ],
+    "inverter_specs": [
+      "rated_ac_power_kw",
+      "max_dc_power_kw",
+      "phase",
+      "mppt_count",
+      "strings_per_mppt",
+      "max_dc_voltage_v",
+      "startup_voltage_v",
+      "mppt_voltage_range_v",
+      "max_input_current_a",
+      "max_short_circuit_current_a",
+      "max_efficiency_percent",
+      "euro_efficiency_percent",
+      "ip_rating",
+      "battery_compatible",
+      "backup_capable",
+      "export_limitation_supported"
+    ],
+    "mounting_specs": [
+      "mounting_family",
+      "roof_type",
+      "orientation_supported",
+      "rail_length_mm",
+      "material",
+      "finish",
+      "compatible_module_thickness_mm",
+      "wind_zone_constraints",
+      "ballast_method",
+      "required_parts_rules"
+    ],
+    "bom_fields": [
+      "project_id",
+      "array_id",
+      "product_id",
+      "qty",
+      "unit",
+      "role",
+      "dependency_reason",
+      "waste_margin_percent",
+      "confidence",
+      "installer_review_required"
+    ]
+  },
+  "technical_phase_clusters": [
+    {
+      "phase": "NVE_001",
+      "name": "Catalogue ingestor V0",
+      "goal": "Build reliable crawler/parser for Nuvision public Shopify catalogue pages, with permission/robots-safe behaviour.",
+      "outputs": [
+        "nuvision_products_raw.json",
+        "nuvision_product_links.csv",
+        "datasheet_link_queue.json"
+      ],
+      "pass_gates": [
+        "all 19 public PV panel products captured",
+        "inverter collection pagination captured",
+        "battery collection pagination captured",
+        "mounting collection pagination captured",
+        "no duplicate product URLs",
+        "all records have category, title, brand/vendor, URL, availability"
+      ]
+    },
+    {
+      "phase": "NVE_002",
+      "name": "Datasheet fetch + manufacturer spec parser",
+      "goal": "Download datasheets from Nuvision and original manufacturer sources; parse dimensions and electrical specs into typed fields.",
+      "outputs": [
+        "datasheets/raw",
+        "datasheets/parsed_specs.json",
+        "datasheet_parse_errors.json"
+      ],
+      "pass_gates": [
+        "panel dimensions parsed for >=95% of panels",
+        "panel Voc/Isc/Vmp/Imp parsed for >=90% of panels",
+        "inverter MPPT/string limits parsed for top inverter families",
+        "manual review queue for ambiguous PDFs"
+      ]
+    },
+    {
+      "phase": "NVE_003",
+      "name": "Panel packing engine",
+      "goal": "Use product dimensions to pack real modules on roof polygons/field polygons with portrait/landscape/mixed layouts.",
+      "outputs": [
+        "packing_engine.ts",
+        "layout_score_report.json"
+      ],
+      "pass_gates": [
+        "works for rectangles and arbitrary roof polygons",
+        "respects setbacks/keep-outs",
+        "compares large vs small module strategies",
+        "exports panel coordinates"
+      ]
+    },
+    {
+      "phase": "NVE_004",
+      "name": "3D roof + shade V0",
+      "goal": "Manual roof pitch/azimuth and hand-drawn obstruction blocks, annual sun-path shadow animation.",
+      "outputs": [
+        "threejs_roof_scene",
+        "annual_shade_matrix.json"
+      ],
+      "pass_gates": [
+        "hourly sun path works",
+        "manual building blocks cast shadows",
+        "panel shade heatmap generated",
+        "monthly shaded/unshaded graph displayed"
+      ]
+    },
+    {
+      "phase": "NVE_005",
+      "name": "Inverter/string matching",
+      "goal": "Suggest compatible inverters and string layouts using parsed panel and inverter electrical specs.",
+      "outputs": [
+        "string_design_engine.py",
+        "inverter_shortlist.json",
+        "warnings.json"
+      ],
+      "pass_gates": [
+        "cold Voc check",
+        "hot Vmp startup/MPPT check",
+        "max current check",
+        "MPPT grouping check",
+        "engineer-review warning flags"
+      ]
+    },
+    {
+      "phase": "NVE_006",
+      "name": "BOM + proposal pack",
+      "goal": "Turn layout into Nuvision-stock-aware bill of materials, datasheet pack and customer/install proposal.",
+      "outputs": [
+        "bom.json",
+        "proposal.pdf",
+        "installer_pack.zip"
+      ],
+      "pass_gates": [
+        "panels/inverter/mounting/core electrical items listed",
+        "alternatives ranked by customer goal",
+        "PDF/JSON export stable"
+      ]
+    },
+    {
+      "phase": "NVE_007",
+      "name": "Advanced scan path",
+      "goal": "Prototype LiDAR/drone/photogrammetry/Gaussian splat/Unreal visual layer after core product works.",
+      "outputs": [
+        "scan_import_spec.md",
+        "unreal_visualiser_proof"
+      ],
+      "pass_gates": [
+        "scan-to-roof-plane extraction tested",
+        "3D customer visual demo runs",
+        "no dependency on this for core quoting"
+      ]
+    }
+  ],
+  "source_notes": {
+    "solar_panel_collection": "Public collection showed 19 Products and product titles/availability/status in the listing.",
+    "inverter_collection": "Public collection showed 86 Products; first page visible examples include SolarEdge and Sunsynk equipment.",
+    "battery_collection": "Public collection showed 188 Products; first page visible examples include Eland, Customark, Jean Muller, Pylontech, Fox ESS and SolarEdge parts.",
+    "mounting_collection": "Public collection showed 363 Products; first page visible examples include Van der Valk, Fastensol, Renusol and SolaSkirt mounting products."
+  }
+}

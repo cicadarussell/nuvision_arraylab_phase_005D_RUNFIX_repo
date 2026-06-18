@@ -1,0 +1,39 @@
+{
+  "project_id": "bench_simple_south_001",
+  "site": {
+    "postcode": "EX14 4PB",
+    "lat": 50.86,
+    "lon": -3.23
+  },
+  "roof_planes": [
+    {
+      "roof_plane_id": "roof_south",
+      "pitch_deg": 35,
+      "azimuth_deg": 180,
+      "height_m": 6.5,
+      "polygon_local_m": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "roof_type": "tiled_pitched"
+    }
+  ],
+  "expected": {
+    "warnings": [],
+    "must_create_calculation_run": true
+  }
+}

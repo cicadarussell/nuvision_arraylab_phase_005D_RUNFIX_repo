@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArrayLab Spreadsheet Import",
+  "type": "object",
+  "required": [
+    "import_id",
+    "file_hash_sha256",
+    "status",
+    "diff_summary"
+  ],
+  "properties": {
+    "import_id": {
+      "type": "string"
+    },
+    "file_name": {
+      "type": "string"
+    },
+    "file_hash_sha256": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "uploaded",
+        "staged",
+        "approved",
+        "rejected",
+        "applied",
+        "rolled_back"
+      ]
+    },
+    "diff_summary": {
+      "type": "object"
+    }
+  }
+}
