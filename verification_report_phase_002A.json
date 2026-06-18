@@ -1,0 +1,23 @@
+{
+  "phase": "NVA_002A",
+  "title": "Datasheet Harvester + Review Queue",
+  "checks": {
+    "backend_pytest": "26 passed",
+    "compile_check": "passed",
+    "quality_gate": "passed",
+    "seed_catalogue_dry_run": "passed: 56 staged rows, 19 product creates, 19 expected Q0 warnings",
+    "ruff_lint": "not run: ruff not installed in execution environment"
+  },
+  "truth_boundary": "Datasheet extraction creates Q2 candidates only. Named human review required before Q3 ProductSpec engineering use.",
+  "known_not_done": [
+    "live NuVision crawler",
+    "OCR fallback",
+    "advanced table parser",
+    "review UI",
+    "PVGIS endpoint",
+    "panel packing",
+    "inverter/string maths",
+    "Van der Valk export",
+    "BOM/proposal generator"
+  ]
+}

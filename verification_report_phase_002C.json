@@ -1,0 +1,20 @@
+{
+  "phase": "NVA_002C",
+  "phase_name": "Datasheet Review UI + Model Selection Hardening",
+  "restored_from": "NVA_002B",
+  "backend_tests": "35 passed",
+  "compile_check": "passed",
+  "quality_gate": "passed",
+  "ruff_lint": "not run: ruff not installed in this environment",
+  "features_added": [
+    "review queue v2 grouped by product and datasheet",
+    "frontend admin review UI stub calling /api/datasheet-review-queue/v2",
+    "multi-model approval requires selected model or datasheet variant",
+    "multi-model approval requires corrected value, corrected unit, basis, and reason",
+    "datasheet table-preview endpoint",
+    "OCR status placeholder endpoint",
+    "product design-readiness recalculation from Q3 specs",
+    "panel design-ready auto-promotion when critical Q3 specs exist"
+  ],
+  "truth_boundary": "Datasheet candidates remain Q2 until named Q3 review; structural approval still requires manufacturer/engineer workflow."
+}

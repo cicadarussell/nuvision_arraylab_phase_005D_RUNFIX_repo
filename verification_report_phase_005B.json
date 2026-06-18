@@ -1,0 +1,12 @@
+{
+  "phase": "NVA_005B",
+  "checks": {
+    "backend_tests": "94 passed",
+    "backend_compile": "passed",
+    "route_smoke_test": "passed",
+    "quality_gate": "passed",
+    "frontend_build": "passed",
+    "ruff_lint": "not run: ruff not installed here"
+  },
+  "not_final": "Preview yield only; not final proposal, MCS, structural or electrical approval."
+}

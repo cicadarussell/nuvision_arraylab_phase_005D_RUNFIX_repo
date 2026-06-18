@@ -1,0 +1,25 @@
+{
+  "phase": "NVA_004A",
+  "title": "Geometry Quality + Setback/Margin Rules",
+  "artifact": "nuvision_arraylab_phase_004A_repo.zip",
+  "verified_at": "2026-06-18",
+  "checks": {
+    "backend_pytest": "63 passed",
+    "compileall_backend_app": "passed",
+    "quality_gate": "passed",
+    "route_smoke_test": "passed",
+    "frontend_vite_build": "passed with large MapLibre bundle warning",
+    "ruff_lint": "not run; ruff not installed in this execution environment"
+  },
+  "new_capabilities": [
+    "geometry quality report",
+    "default pre-design setback rules by roof type",
+    "Shapely polygon validity check",
+    "negative buffer setback erosion for usable roof area",
+    "obstruction clearance cut-outs",
+    "packer allowed area export",
+    "geometry quality evidence snapshot",
+    "frontend controls for quality and packer export"
+  ],
+  "truth_boundary": "Setback outputs are pre-design geometry checks only. They do not approve structural safety, wind loading, ballast, roof fixing, MCS compliance, or install readiness."
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "NVA_005D_RUNFIX",
+  "software_version": "0.5.3-phase005D-RUNFIX",
+  "build_type": "Small repair + feature phase",
+  "preserved_from": "NVA_005C_RUNFIX + NVA_005D shade preview branch",
+  "checks": {
+    "backend_tests": "100 passed",
+    "backend_compile": "passed",
+    "quality_gate": "passed",
+    "route_smoke_test": "passed",
+    "shade_preview_self_check": "passed",
+    "frontend_typescript_vite_build": "passed",
+    "ruff_lint": "not run: ruff not installed here"
+  },
+  "truth_boundary": "Shade preview is deterministic debug evidence only; not annual shade-adjusted yield, final proposal maths, PVsyst, structural approval, electrical design, or MCS sign-off.",
+  "known_warning": "Vite reports large MapLibre bundle; not a functional failure."
+}

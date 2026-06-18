@@ -1,0 +1,30 @@
+{
+  "phase": "NVA_002D",
+  "restored_from": "NVA_002C",
+  "backend_tests": "41 passed",
+  "compile_check": "passed",
+  "quality_gate": "passed",
+  "route_smoke_test": "passed",
+  "ruff_lint": "not run; ruff not installed in execution environment",
+  "known_nonblocking_messages": [
+    "PyMuPDF may print suggestion to install pymupdf_layout during some PDF table checks."
+  ],
+  "new_test_files": [
+    "backend/tests/test_datasheet_downloader_worker.py",
+    "backend/tests/test_local_debug_harness.py"
+  ],
+  "new_user_test_files": [
+    "run_dev.bat",
+    "run_tests.bat",
+    "reset_local_db.bat",
+    "TESTING.md",
+    "local_test_harness.html"
+  ],
+  "new_endpoints": [
+    "GET /api/debug/restore-check",
+    "GET /api/debug/route-map",
+    "POST /api/datasheet-download-jobs/{job_id}/run",
+    "GET /api/datasheet-download-jobs/debug",
+    "GET /api/datasheet-ocr-jobs"
+  ]
+}

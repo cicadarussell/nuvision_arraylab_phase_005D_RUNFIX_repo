@@ -1,0 +1,37 @@
+{
+  "phase": "NVA_001C",
+  "title": "Database Persistence + Spreadsheet Staging",
+  "timestamp_utc": "2026-06-18T14:20:00Z",
+  "checks": [
+    {
+      "name": "pytest backend suite",
+      "result": "passed",
+      "detail": "10 passed"
+    },
+    {
+      "name": "quality gate",
+      "result": "passed",
+      "detail": "hash, calculation run, missing roof height, spreadsheet stage+approve snapshot"
+    },
+    {
+      "name": "compileall",
+      "result": "passed",
+      "detail": "backend app/tests compile"
+    },
+    {
+      "name": "ruff",
+      "result": "not_run",
+      "detail": "ruff not installed in execution environment; pyproject keeps ruff as dev dependency"
+    }
+  ],
+  "known_not_done": [
+    "live Postgres run not executed in this environment",
+    "full NuVision catalogue crawl not run",
+    "datasheet parser not implemented",
+    "roof UI not implemented",
+    "PVGIS endpoint not implemented",
+    "panel packing not implemented",
+    "Valk Assist export not implemented"
+  ],
+  "truth_boundary": "No structural approval claims; manufacturer/engineer sign-off remains required."
+}

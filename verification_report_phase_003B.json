@@ -1,0 +1,28 @@
+{
+  "phase": "NVA_003B",
+  "software_version": "0.3.1-phase003B",
+  "restored_from": "NVA_003A",
+  "checks": {
+    "backend_tests": "53 passed",
+    "compile_check": "passed",
+    "quality_gate": "passed",
+    "route_smoke_test": "passed",
+    "geometry_import_self_check": "passed",
+    "local_test_harness": "updated with drawing/import/export",
+    "ruff_lint": "not run; ruff not installed in execution environment / not part of run_tests without local dev env"
+  },
+  "truth_boundary": "Design-assist only. Imported/drawn geometry is planning evidence, not structural approval.",
+  "new_endpoints": [
+    "GET /api/debug/geometry-import-self-check",
+    "POST /api/projects/{project_id}/geometry/import-cicada-planner",
+    "GET /api/projects/{project_id}/geometry/export"
+  ],
+  "known_not_done": [
+    "real MapLibre roof drawing inside app",
+    "PVGIS/pvlib yield endpoint",
+    "panel packing optimiser",
+    "inverter/string matching",
+    "Van der Valk Assist export",
+    "BOM/proposal generator"
+  ]
+}

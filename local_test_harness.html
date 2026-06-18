@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NuVision ArrayLab Local Test Harness</title>
+  <style>
+    :root { font-family: Inter, Segoe UI, Arial, sans-serif; color: #111827; background: #f8fafc; }
+    body { margin: 0; padding: 24px; }
+    main { max-width: 1100px; margin: 0 auto; }
+    h1 { margin-bottom: 4px; }
+    .sub { color: #475569; margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-top: 20px; }
+    .card { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 16px; box-shadow: 0 10px 28px rgba(15, 23, 42, .06); }
+    button { border: 0; border-radius: 12px; padding: 10px 14px; cursor: pointer; background: #111827; color: white; font-weight: 700; }
+    button.secondary { background: #334155; }
+    pre { white-space: pre-wrap; word-break: break-word; background: #0f172a; color: #dbeafe; border-radius: 12px; padding: 12px; max-height: 320px; overflow: auto; }
+    .ok { color: #166534; font-weight: 700; }
+    .bad { color: #991b1b; font-weight: 700; }
+    input { padding: 9px; border: 1px solid #cbd5e1; border-radius: 10px; width: min(520px, 100%); }
+    label { display: block; margin: 10px 0 6px; color: #334155; font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>NuVision ArrayLab Local Test Harness</h1>
+  <p class="sub">Phase 003C. Backend-first plus MapLibre draft roof sync. The React app now has the nicer map UI; this file stays as the emergency debug spanner. This page checks whether the safety spine is alive before we bolt on more cleverness, because apparently sensible sequencing is still a niche hobby.</p>
+
+  <section class="card">
+    <label for="baseUrl">Backend URL</label>
+    <input id="baseUrl" value="http://127.0.0.1:8000" />
+    <p id="status">Backend status: <span class="bad">not checked</span></p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>1. Health</h2>
+      <button onclick="call('/health', false)">Check /health</button>
+    </div>
+    <div class="card">
+      <h2>2. Restore check</h2>
+      <button onclick="call('/api/debug/restore-check')">Check restored phase</button>
+    </div>
+    <div class="card">
+      <h2>3. Route map</h2>
+      <button onclick="call('/api/debug/route-map')">Show route map</button>
+    </div>
+    <div class="card">
+      <h2>4. DB self-check</h2>
+      <button onclick="call('/api/debug/db-self-check')">Check database</button>
+    </div>
+    <div class="card">
+      <h2>5. Datasheet self-check</h2>
+      <button onclick="call('/api/debug/datasheet-self-check')">Check datasheet pipeline</button>
+    </div>
+    <div class="card">
+      <h2>6. Download worker debug</h2>
+      <button onclick="call('/api/datasheet-download-jobs/debug')">Check downloader queue</button>
+    </div>
+    <div class="card">
+      <h2>7. Geometry self-check</h2>
+      <button onclick="call('/api/debug/geometry-self-check')">Check project geometry</button>
+    </div>
+
+    <div class="card">
+      <h2>8. Geometry import self-check</h2>
+      <button onclick="call('/api/debug/geometry-import-self-check')">Check CICADA import</button>
+    </div>
+    <div class="card">
+      <h2>9. Map sync self-check</h2>
+      <button onclick="call('/api/debug/map-sync-self-check')">Check GeoJSON roof sync</button>
+    </div>
+    <div class="card">
+      <h2>10. Projects</h2>
+      <button onclick="call('/api/projects')">List projects</button>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:16px;">
+    <h2>Output</h2>
+    <pre id="out">Press a button. The machine will either respond or sulk. Both are data.</pre>
+  </section>
+</main>
+<script>
+  function base() { return document.getElementById('baseUrl').value.replace(/\/$/, ''); }
+  async function call(path, apiPrefix=true) {
+    const url = base() + path;
+    const out = document.getElementById('out');
+    const status = document.getElementById('status');
+    out.textContent = 'Calling ' + url + ' ...';
+    try {
+      const res = await fetch(url);
+      const text = await res.text();
+      let payload;
+      try { payload = JSON.parse(text); } catch { payload = text; }
+      status.innerHTML = 'Backend status: ' + (res.ok ? '<span class="ok">responding</span>' : '<span class="bad">error ' + res.status + '</span>');
+      out.textContent = JSON.stringify(payload, null, 2);
+    } catch (err) {
+      status.innerHTML = 'Backend status: <span class="bad">not reachable</span>';
+      out.textContent = String(err) + '\n\nStart the backend with run_dev.bat first.';
+    }
+  }
+</script>
+</body>
+</html>

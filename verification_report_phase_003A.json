@@ -1,0 +1,28 @@
+{
+  "phase": "NVA_003A",
+  "software_version": "0.3.0-phase003A",
+  "tests": {
+    "backend_pytest": "47 passed",
+    "compileall": "passed",
+    "quality_gate": "passed",
+    "route_smoke_test": "passed"
+  },
+  "truth_boundary": "design-assist only; manufacturer/engineer approval required for structural claims",
+  "new_capabilities": [
+    "Project table",
+    "Site table with source confidence",
+    "Roof plane table with area and edge-zone depth",
+    "Obstruction table",
+    "Project geometry snapshots",
+    "Mounting precheck stored as calculation run",
+    "Geometry self-check endpoint"
+  ],
+  "not_done": [
+    "roof drawing UI",
+    "PVGIS/pvlib yield endpoint",
+    "panel packing optimiser",
+    "inverter/string matching",
+    "Van der Valk Assist export",
+    "BOM/proposal generator"
+  ]
+}

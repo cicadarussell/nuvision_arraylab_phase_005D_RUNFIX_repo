@@ -1,0 +1,21 @@
+{
+  "phase": "NVA_002B",
+  "phase_name": "Datasheet Harvester Hardening + Review UI Stub",
+  "backend_tests": "31 passed",
+  "compile_check": "passed",
+  "quality_gate": "passed",
+  "ruff_lint": "not run: ruff not installed in this environment",
+  "features_added": [
+    "datasheet source-domain registry",
+    "datasheet download queue",
+    "URL validation against approved domains",
+    "PyMuPDF table extraction attempt",
+    "pdfplumber fallback table extraction attempt",
+    "multi-model conflict detection",
+    "needs_model_review status",
+    "batch-review protections",
+    "grouped review queue endpoint",
+    "frontend review UI stub"
+  ],
+  "truth_boundary": "Q2 parsed candidates cannot become engineering truth without named Q3 review."
+}

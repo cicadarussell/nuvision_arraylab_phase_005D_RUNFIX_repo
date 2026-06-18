@@ -1,0 +1,35 @@
+{
+  "phase": "NVA_003C",
+  "checks": {
+    "backend_pytest": "58 passed",
+    "compileall": "passed",
+    "quality_gate": "passed",
+    "route_smoke_test": "passed",
+    "frontend_build": "passed",
+    "frontend_note": "Vite chunk-size warning from MapLibre; not a functional failure",
+    "ruff": "not run: ruff not installed in this environment"
+  },
+  "bugs_found_and_fixed": [
+    {
+      "bug": "Frontend main.tsx imported named App but App.tsx exported default only",
+      "fix": "Changed App.tsx to export named App and verified frontend build"
+    },
+    {
+      "bug": "TypeScript moduleResolution=Node deprecated under current TS",
+      "fix": "Changed to Bundler module resolution"
+    },
+    {
+      "bug": "CSS side-effect imports lacked declarations",
+      "fix": "Added vite-env.d.ts"
+    },
+    {
+      "bug": "MapLibre attributionControl boolean type mismatch",
+      "fix": "Used attributionControl object"
+    }
+  ],
+  "new_endpoints": [
+    "GET /api/debug/map-sync-self-check",
+    "POST /api/projects/{project_id}/geometry/import-geojson-roof",
+    "GET /api/projects/{project_id}/geometry/export-geojson"
+  ]
+}

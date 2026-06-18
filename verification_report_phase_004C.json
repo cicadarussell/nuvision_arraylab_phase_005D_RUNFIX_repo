@@ -1,0 +1,24 @@
+{
+  "phase": "NVA_004C",
+  "name": "ProductSpec Panel Picker + Candidate Compare UI",
+  "build_type": "mainline_continuation",
+  "restored_from": "NVA_004B",
+  "verification": {
+    "backend_tests": "74 passed",
+    "compile_check": "passed",
+    "quality_gate": "passed",
+    "route_smoke_test": "passed",
+    "frontend_typescript_vite_build": "passed",
+    "ruff": "not run: ruff not installed in this execution environment"
+  },
+  "added": [
+    "reviewed panel model list endpoint",
+    "frontend reviewed panel model picker",
+    "preview/final design mode selector",
+    "candidate comparison table",
+    "candidate reason codes and score explanations",
+    "candidate comparison hash in panel packing output",
+    "tests proving Q0/Q1 products are excluded from final choices"
+  ],
+  "truth_boundary": "Panel packing is design-assist/pre-design evidence only. Final mode blocks development fallback panels, but still requires electrical, mounting, manufacturer, engineer and compliance workflows."
+}

@@ -1,0 +1,23 @@
+{
+  "phase": "NVA_005C",
+  "software_version": "0.5.2-phase005C",
+  "build_type": "Mainline",
+  "source_branch": "NVA_005B",
+  "verification": {
+    "backend_tests": "98 passed",
+    "backend_compile": "passed",
+    "quality_gate": "passed",
+    "route_smoke_test": "passed",
+    "frontend_typescript_vite_build": "passed",
+    "ruff": "not run: ruff not installed in build environment"
+  },
+  "new_features": [
+    "pvlib-ready solar position service with deterministic fallback",
+    "roof-plane incidence factor debug samples",
+    "solar geometry self-check endpoint",
+    "project solar geometry debug endpoint",
+    "shade-engine input contract V0.1",
+    "frontend solar geometry debug card"
+  ],
+  "truth_boundary": "preview/debug only; not final yield, shade, MCS, structural, electrical, or proposal truth"
+}
